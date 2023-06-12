@@ -1,17 +1,16 @@
 @font-face {
   font-family: 'icons';
-  src:  url('../fonts/icons.eot?89ao3h');
-  src:  url('../fonts/icons.eot?89ao3h#iefix') format('embedded-opentype'),
-    url('../fonts/icons.ttf?89ao3h') format('truetype'),
-    url('../fonts/icons.woff?89ao3h') format('woff'),
-    url('../fonts/icons.svg?89ao3h#icons') format('svg');
+  src:  url('../fonts/icons.eot?9mtozy');
+  src:  url('../fonts/icons.eot?9mtozy#iefix') format('embedded-opentype'),
+    url('../fonts/icons.ttf?9mtozy') format('truetype'),
+    url('../fonts/icons.woff?9mtozy') format('woff'),
+    url('../fonts/icons.svg?9mtozy#icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="_icon-"]::before,
-[class*=" _icon-"]::before {
+[class^="_icon-"]::before, [class*=" _icon-"]::before {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icons' !important;
   speak: never;
@@ -26,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+._icon-burger-menu:before {
+  content: "\e908";
+}
 ._icon-trash-btn:before {
   content: "\e907";
 }

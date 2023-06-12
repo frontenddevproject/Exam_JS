@@ -27,6 +27,7 @@
                         <li class="menu__list-item"><a class="menu__link" href="#">Contact</a></li>
                      </ul>
                   </nav>
+                  <div class="menu__burger-menu _icon-burger-menu">
                </div>
                <div class="header__content">
                   <div class="container">
@@ -52,93 +53,91 @@
          </div>
          <div class="header__visual-effect"></div>
       </header>
-      <div class="interactive-block">
-         <section class="interactive-block__laptop">
-            <div class="laptop-container">
-               <img class="interactive-block__laptop-image" src="./images/Laptop_copy.webp" alt="laptop">
-               <div class="interactive-block__laptop-audioplayer-container">
-                  <div class="interactive-block__audioplayer">
-                     <div class="audioplayer__top-panel">
-                        <div class="audioplayer__top-panel-container">
-                           <div class="audioplayer__top-panel-logo">
-                              <h3><span>Freedom</span>music</h3> 
-                           </div>
-                           <div class="audioplayer__top-panel-search">
-                              <input id="inputArtistName" class="audioplayer__input" type="text" placeholder="Enter artist's name">
-                              <button id="search-btn" class="audioplayer__top-panel-search-btn _icon-search-btn"></button>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="audioplayer__main-section">
-                        <div class="audioplayer__card-section" id="cards-output"></div>
-                        <div class="audioplayer__playlist">
-                           <h2 class="audioplayer__playlist-title">Playlist</h2>
-                           <div class="audioplayer__playlist-output">
-                              <audio class="audioplayer-audio"></audio>
+      <main class="main">
+         <div class="interactive-block">
+            <section class="interactive-block__laptop">
+               <div class="laptop-container">
+                  <img class="interactive-block__laptop-image" src="./images/Laptop_copy.webp" alt="laptop">
+                  <div class="interactive-block__laptop-audioplayer-container">
+                     <div class="interactive-block__audioplayer">
+                        <div class="audioplayer__top-panel">
+                           <div class="audioplayer__top-panel-container">
+                              <div class="audioplayer__top-panel-logo">
+                                 <h3><span>Freedom</span>music</h3> 
+                              </div>
+                              <div class="audioplayer__top-panel-search">
+                                 <input id="inputArtistName" class="audioplayer__input" type="text" placeholder="Enter artist's name">
+                                 <button id="search-btn" class="audioplayer__top-panel-search-btn _icon-search-btn"></button>
+                              </div>
                            </div>
                         </div>
-                     </div>
-                     <div class="audioplayer__controls">
-                        <div class="audioplayer__controls-button">
-                           <button class="audioplayer__button audioplayer__button--prev _icon-prev-btn"></button>
-                           <button class="audioplayer__button audioplayer__button--play _icon-play-btn"></button>
-                           <button class="audioplayer__button audioplayer__button--next _icon-next-btn"></button>
+                        <div class="audioplayer__main-section">
+                           <div class="audioplayer__card-section" id="cards-output"></div>
+                           <div class="audioplayer__playlist">
+                              <h2 class="audioplayer__playlist-title">Playlist</h2>
+                              <div class="audioplayer__playlist-output">
+                                 <audio class="audioplayer-audio"></audio>
+                              </div>
+                           </div>
                         </div>
-                        <div class="audioplayer__controls-range-block">
-                           <span class="audioplayer__controls-track-current-time">0:0</span>
-                           <div class="wrapper">
-                              <input type = "range" min = "0" max = "100" value = "0" class = "slider" disabled>
-                              <div class="progress"></div>
-                            </div>
-                           <span class="audioplayer__controls-track-duration"></span>
-                        </div>
-                        <div class="audioplayer__controls-sorting">
-                           <button class="audioplayer__button audioplayer__button--sort _icon-sort-btn"></button>
-                        </div>
-                        <div class="audioplayer__controls-volume">
-                           <button class="audioplayer__button audioplayer__button--muted _icon-mute-btn"></button>
+                        <div class="audioplayer__controls">
+                           <div class="audioplayer__controls-button">
+                              <button class="audioplayer__button audioplayer__button--prev _icon-prev-btn"></button>
+                              <button class="audioplayer__button audioplayer__button--play _icon-play-btn"></button>
+                              <button class="audioplayer__button audioplayer__button--next _icon-next-btn"></button>
+                           </div>
+                           <div class="audioplayer__controls-range-block">
+                              <span class="audioplayer__controls-track-current-time">0:0</span>
+                              <div class="wrapper">
+                                 <input type = "range" min = "0" max = "100" value = "30" class = "slider" >
+                                 <div class="progress"></div>
+                               </div>
+                              <span class="audioplayer__controls-track-duration"></span>
+                           </div>
+                           <div class="audioplayer__controls-sorting">
+                              <button class="audioplayer__button audioplayer__button--sort _icon-sort-btn"></button>
+                           </div>
+                           <div class="audioplayer__controls-volume">
+                              <button class="audioplayer__button audioplayer__button--muted _icon-mute-btn"></button>
+                           </div>
                         </div>
                      </div>
                   </div>
-               </div>
-            </div>   
-         </section>
-         <div class="interactive-block__text-content">
-            <section class="interactive-block__about">
-               <div class="container">
-                  <div class="interactive-block__about-inner">
-                     <div class="title-container">
-                        <h3 class="title-container__title">
-                           About us
-                        </h3>
-                        <span class="title-container__subtitle">#freedommusic</span>
-                     </div>
-                     <p class="interactive-block__description">
-                        Sit amet, consectetur adipiscing elit. Pellentesque condimentum, tortor convallis eleifend dapibus, quam sem commodo lorem, vitae suscipit sapien purus dignissim orci. Ut vulputate scelerisque sapien tempor dignissim. Vivamus accumsan condimentum rutrum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec auctor lectus et nibh tincidunt, et dignissim lectus scelerisque. Maecenas tincidunt fermentum tristique. Duis sem odio, porttitor id sapien ullamcorper, sagittis hendrerit tortor. Nam aliquam posuere facilisis. Duis ornare sem tellus, in sagittis augue rutrum id.
-                     </p>
-                  </div>
-               </div>
+               </div>   
             </section>
-            <section class="interactive-block__readme">
-               <div class="container">
-                  <div class="interactive-block__readme-inner">
-                     <div class="title-container">
-                        <h3 class="title-container__title">
-                           Readme
-                        </h3>
-                        <span class="title-container__subtitle">#freedommusic</span>
+            <div class="interactive-block__text-content">
+               <section class="interactive-block__about">
+                  <div class="container">
+                     <div class="interactive-block__about-inner">
+                        <div class="title-container">
+                           <h3 class="title-container__title">
+                              About us
+                           </h3>
+                           <span class="title-container__subtitle">#freedommusic</span>
+                        </div>
+                        <p class="interactive-block__description">
+                           Sit amet, consectetur adipiscing elit. Pellentesque condimentum, tortor convallis eleifend dapibus, quam sem commodo lorem, vitae suscipit sapien purus dignissim orci. Ut vulputate scelerisque sapien tempor dignissim. Vivamus accumsan condimentum rutrum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec auctor lectus et nibh tincidunt, et dignissim lectus scelerisque. Maecenas tincidunt fermentum tristique. Duis sem odio, porttitor id sapien ullamcorper, sagittis hendrerit tortor. Nam aliquam posuere facilisis. Duis ornare sem tellus, in sagittis augue rutrum id.
+                        </p>
                      </div>
-                     <p class="interactive-block__description">
-                        Sit amet, consectetur adipiscing elit. Pellentesque condimentum, tortor convallis eleifend dapibus, quam sem commodo lorem, vitae suscipit sapien purus dignissim orci. Ut vulputate scelerisque sapien tempor dignissim. Vivamus accumsan condimentum rutrum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec auctor lectus et nibh tincidunt, et dignissim lectus scelerisque. Maecenas tincidunt fermentum tristique. Duis sem odio, porttitor id sapien ullamcorper, sagittis hendrerit tortor. Nam aliquam posuere facilisis. Duis ornare sem tellus, in sagittis augue rutrum id.
-                     </p>
                   </div>
-               </div>
-            </section>
+               </section>
+               <section class="interactive-block__readme">
+                  <div class="container">
+                     <div class="interactive-block__readme-inner">
+                        <div class="title-container">
+                           <h3 class="title-container__title">
+                              Readme
+                           </h3>
+                           <span class="title-container__subtitle">#freedommusic</span>
+                        </div>
+                        <p class="interactive-block__description">
+                           Sit amet, consectetur adipiscing elit. Pellentesque condimentum, tortor convallis eleifend dapibus, quam sem commodo lorem, vitae suscipit sapien purus dignissim orci. Ut vulputate scelerisque sapien tempor dignissim. Vivamus accumsan condimentum rutrum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec auctor lectus et nibh tincidunt, et dignissim lectus scelerisque. Maecenas tincidunt fermentum tristique. Duis sem odio, porttitor id sapien ullamcorper, sagittis hendrerit tortor. Nam aliquam posuere facilisis. Duis ornare sem tellus, in sagittis augue rutrum id.
+                        </p>
+                     </div>
+                  </div>
+               </section>
+            </div>
          </div>
-
-      </div>
-
-      <section class="counter"></section>
 
          <section class="features">
             <div class="container">
@@ -155,7 +154,7 @@
             </div>
             <div class="feature__visual-effect"></div>
          </section>
-      
+      </main>
       <footer class="footer">
          <div class="container">
             <div class="footer-inner">
