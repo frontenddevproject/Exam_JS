@@ -194,7 +194,7 @@ window.addEventListener("load", () => {
 
          return AudioPlayer.tracksBtn;
       }
-      
+
       renderPlaylist () {
          AudioPlayer.playlistOutput.innerHTML = "";
          this.playlist = this.getPlaylistData();
@@ -318,8 +318,10 @@ window.addEventListener("load", () => {
       }
       
       sortingByRating() {
-         const newData = [...this.data].sort((track1, track2) => track2.rank - track1.rank);
-         this.renderData(newData, AudioPlayer.cardsOutput, false);
+         if (this.data.length > 1) {
+            const newData = [...this.data].sort((track1, track2) => track2.rank - track1.rank);
+            this.renderData(newData, AudioPlayer.cardsOutput, false);
+         } 
       }
    }
 
