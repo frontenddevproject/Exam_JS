@@ -55,8 +55,9 @@
    justify-content: center;
    align-items: center;
    color:#fff;
-   font-size: 20px;
+   font-size: 16px;
    font-weight: 700;
+   cursor: pointer;
 }
 .audioplayer__top-panel-search-btn:active {
    transform: scale(0.95);
